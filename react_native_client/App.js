@@ -1,10 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import PirateContainer from './containers/PirateContainer';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
+      <Text style={{fontWeight: "bold"}}>
+        Welcome to Pirate Service App!
+        {'\n'}
+      </Text>
+      <Text>
+        Pirates:
+        {'\n'}
+      </Text>
+      <PirateContainer/>
       <StatusBar style="auto" />
     </View>
   );
